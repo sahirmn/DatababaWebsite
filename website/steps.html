@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<link href="includes/style.css" rel="stylesheet" type="text/css">
+<link href="includes/rangeslider.css" rel="stylesheet" type="text/css">
+<link href="includes/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="includes/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="includes/jquery-ui.min.js"></script>
+<script type="text/javascript" src="includes/main.js"></script>
+<script type="text/javascript" src="includes/rangeslider.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<title>Website Onboarding Process</title>
+</head>
+
+<body>
+		
+	<div class="container container-fullheight">
+		<div class="logo logo-steps"><a href="index.html"><img src="includes/baba-logo.png"/></a></div>
+		
+		<div class="headline headline-home headline-steps">Tell us about<br>your requirements</div>
+		
+		<!--<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit seddo<br> eiusmod tempor incididunt ut labore et.</div>-->
+		
+		<form method="post" id="steps" class="steps">
+			
+			
+			<div class="groups" id="group-0">
+				<div class="small-title"></div>
+				<div class="title"></div>
+			</div>
+			
+			<div class="groups" id="group-1" style="overflow: visible; margin-top: -25px;">
+				<input type="text" name="q1" placeholder="Do you currently have a website?"/>
+				<input type="text" name="q2" placeholder="Link to your brand's website" class="no-space"/>
+				<div style="clear: both;" class="m-divider"></div>
+				<textarea name="q3" placeholder="Why are you looking for a new website?"></textarea>
+				
+				<div class="divider"></div>
+				
+				<div class="title small">What sort of a website are you looking for?</div>
+				
+				<div class="custom-checkbox">
+					<div class="icon-cont"><div class="icon active"></div></div>
+					<div class="title">Personal Website</div>
+					<div class="desc">No thanks. I’ll just start with the logo for now.</div>
+				</div>
+				
+				<div class="custom-checkbox">
+					<div class="icon-cont"><div class="icon"></div></div>
+					<div class="title">Corporate Website</div>
+					<div class="desc">Get everything you need to kick off your brand.</div>
+				</div>
+				
+				<div class="custom-checkbox last">
+					<div class="icon-cont"><div class="icon"></div></div>
+					<div class="title">E-Commerce Website</div>
+					<div class="desc">Get a logo and a website to go with it.</div>
+				</div>
+				
+				<input type="text" name="q4" style="display: none;" class="select-input"/>
+				<div style="clear: both;"></div>
+			</div>
+			
+			<div class="groups" id="group-2" style="overflow: visible; margin-top: -60px;">
+				
+				<div class="title small">Are you looking for a specific platform?</div>
+				
+				<div class="custom-checkbox">
+					<div class="icon-cont"><div class="icon active"></div></div>
+					<div class="title">WordPress</div>
+					<div class="desc">No thanks. I’ll just start with the logo for now.</div>
+				</div>
+				
+				<div class="custom-checkbox">
+					<div class="icon-cont"><div class="icon"></div></div>
+					<div class="title">Shopify</div>
+					<div class="desc">Get everything you need to kick off your brand.</div>
+				</div>
+				
+				<div class="custom-checkbox last">
+					<div class="icon-cont"><div class="icon"></div></div>
+					<div class="title">Static</div>
+					<div class="desc">Get a logo and a website to go with it.</div>
+				</div>
+				
+				<input type="text" name="q5" style="display: none;" class="select-input"/>
+				<div style="clear: both;"></div>
+				
+				<textarea name="q6" placeholder="What is your business about?"></textarea>
+				<textarea name="q7" placeholder="What specific services does your company provide?"></textarea>
+				<textarea name="q8" placeholder="Who is your target audience?"></textarea>
+
+			</div>
+			
+						
+			<div class="groups" id="group-3">
+				<textarea name="q9" placeholder="Who are your top competitors?"></textarea>
+				<textarea name="q10" placeholder="What do you want your customers to do on the website?"></textarea>
+				<textarea name="q11" placeholder="What sets you apart from your competitors?"></textarea>
+			</div>
+			
+			<div class="groups" id="group-4">
+				<textarea name="q12" placeholder="What websites do you like the most and why?"></textarea>
+				<textarea name="q13" placeholder="Do you have a style guide or existing collateral? If so, please provide link(s)."></textarea>
+				<div style="clear: both; margin-bottom: 25px;"></div>
+				<input type="text" name="q14" placeholder="Would you prefer illustrations or photos?"/>
+				<input type="text" name="q15" placeholder="Do you have the content for your website?" class="no-space"/>
+				
+				<div style="clear: both;"></div>
+				<div class="divider"></div>
+
+				<div class="title small">How many pages do you want designed for your website?</div>
+				
+				<div class="custom-checkbox second">
+					<div class="icon-cont"><div class="icon active"></div></div>
+					<div class="title">1 Page</div>
+				</div>
+				
+				<div class="custom-checkbox second">
+					<div class="icon-cont"><div class="icon"></div></div>
+					<div class="title">2 Pages</div>
+				</div>
+				
+				<div class="custom-checkbox second">
+					<div class="icon-cont"><div class="icon"></div></div>
+					<div class="title">3 Pages</div>
+				</div>
+				
+				<div class="custom-checkbox second">
+					<div class="icon-cont"><div class="icon"></div></div>
+					<div class="title">4 Pages</div>
+				</div>
+				
+				<input type="text" name="q16" style="display: none;" class="select-input" value="" />
+			</div>
+			
+			
+			<div class="groups" id="group-5" style="overflow: visible;">
+				<input type="text" name="fname" placeholder="First Name"/>
+				<input type="text" name="lname" placeholder="Last Name" class="no-space"/>
+				<div style="clear: both; margin-bottom: 25px;" class="m-divider"></div>
+				<input type="email" name="email" placeholder="Email"/>
+				<input type="text" name="phone" placeholder="Phone" class="no-space"/>
+				<div style="clear: both;"></div>
+				
+				<div class="divider"></div>
+				
+				<div class="title small">Do you need more than a website?</div>
+				
+				<div class="custom-checkbox">
+					<div class="icon-cont"><div class="icon active"></div></div>
+					<div class="title">Just the website</div>
+					<div class="desc">No thanks. I’ll just start with the logo for now.</div>
+				</div>
+				
+				<div class="custom-checkbox">
+					<div class="icon-cont"><div class="icon"></div></div>
+					<div class="title">Website &amp; logo design</div>
+					<div class="desc">Get everything you need to kick off your brand.</div>
+				</div>
+				
+				<div class="custom-checkbox last">
+					<div class="icon-cont"><div class="icon"></div></div>
+					<div class="title">Complete brand identity</div>
+					<div class="desc">Get a logo and a website to go with it.</div>
+				</div>
+				
+				<input type="text" name="q17" style="display: none;" class="select-input"/>
+				
+				<div style="clear: both;"></div>
+				
+				<div class="divider"></div>
+				<div class="title small">Is there anything else you’d like to communicate?</div>
+				<textarea name="q18" placeholder="Which brand inspire you the most?"></textarea>
+			</div>
+			
+			<div class="groups" id="form-btns">
+				<div class="btn" id="btn-2" data-step="1">Back</div>
+				<div class="btn" id="btn-1" data-step="1">Next</div>
+			</div>
+			
+			<div class="groups" id="results-cont">
+				<div class="results"></div>
+			</div>
+			
+		</form>		
+	</div>
+	
+	
+	<div class="pagination">
+		<div class="handler">
+			
+			<div class="steps">Step 1 of 5</div>
+			<div class="bar">
+				<div class="active"></div>
+			</div>
+			
+			<div class="circle-icon"><span></span></div>
+			
+		</div>
+	</div>
+	
+</body>
+</html>

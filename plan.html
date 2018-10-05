@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DataBaba - Plan</title>
+<script src="includes/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="includes/main.js"></script>
+<script>
+$(document).ready(function(){
+	
+	"use strict"
+	
+	$(".btn-cont").click(function(){
+		
+		if($(this).attr("data-step") === "1"){
+			$("#group-1").css("display", "block");
+			$("#group-2").css("display", "none");
+			$(".plan-steps > .container > .text-w").html("Questions 1 of 5");
+			$(this).attr("data-step", '2');
+		}
+		if($(this).attr("data-step") === "2"){
+			$("#group-1").css("display", "none");
+			$("#group-2").css("display", "block");
+			$(".plan-steps > .container > .text-w").html("Questions 2 of 5");
+			//$('form#plan-form').submit();
+		}
+											  
+											  
+
+	});
+	
+	$('form#plan-form').submit(function(e){
+		  
+		 $(".results").html('Sending Your Request Please Wait...');
+		 $.ajax({
+			  data: $(this).serialize(),
+			  url: 'form.php',
+			  type: 'POST',
+			  success: function(data){
+				  $(".results").html(data);
+			  },
+			  complete: function(){
+				 $('form#plan-form').fadeOut(500, function(){
+					setTimeout(function() { $(".results").fadeIn(300); }, 1000); 
+				 });
+			  },
+		 });
+		 e.preventDefault();
+	 });
+});
+</script>
+<link href="includes/style.css" rel="stylesheet" type="text/css">
+<link href="includes/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+</head>
+
+<body>
+<div class="site-wrapper">	
+	<header>
+		<div class="nav">
+			<div class="logo"><a href="index.html"><img src="images/baba-logo.png"/></a></div>
+			<div class="menu-btn">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+		</div>
+		
+		<div class="menu">
+			<!--<img src="images/animted-image-2.png" class="animated-image-header animated-image">-->
+			<svg id="organic-blob-2" class="animated-circle-2" width="450" height="450" xmlns="http://www.w3.org/2000/svg" filter="url(#goo2)">
+			  <defs>
+				<filter id="goo2">
+				  <!-- tympanus.net/codrops/creative-gooey-effects -->
+				  <fegaussianblur in="SourceGraphic" stdDeviation="10" result="blur" />
+				  <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo2" />
+				  <fecomposite in="SourceGraphic" in2="goo2" operator="atop"/>
+				</filter>
+			  </defs>
+			  <circle id="Circle5"></circle>
+			  <circle id="Circle6"></circle>
+			  <circle id="Circle7"></circle>
+			  <circle id="Circle8"></circle>
+			</svg>
+			<div class="wrapper">
+				<div class="menu-header">
+					<div class="logo"><a href="index.html"><img src="images/baba-logo.png"/></a></div>
+					<div class="close-btn"><span class="fa fa-close"></span></div>
+				</div>
+				
+				<div class="menu-items">
+					<a href="index.html">Home</a>
+					<a href="about.html">Agency</a>
+					<a href="services.html">Services</a>
+					<!--<a href="work.html">Work</a>-->
+					<a href="contact.html">Contact</a>
+				</div>
+				
+				<div class="data">
+				  	<div class="headline">We are all about partnership, not execution<br><span style="font-size: 16px; font-weight: normal;">Because DataBaba cares. Executors don't.</span></div>
+					<div class="meta-cont">
+						<div class="meta">
+							<div class="label">Email</div>
+							<div class="field">hello@datababa.com</div>
+						</div>
+						<div class="meta right">
+							<div class="label">Phone</div>
+							<div class="field">+92 342 2226659</div>
+						</div>
+						<div class="meta full">
+							<div class="label">Address</div>
+							<div class="field">3rd Floor, 59-C, Tauheed Commerical, <br>Phase 5, DHA, Karachi</div>
+						</div>
+						<div class="social-icons">
+							<a href="#"><span class="fa fa-facebook"></span></a>
+							<a href="#"><span class="fa fa-twitter"></span></a>
+							<a href="#"><span class="fa fa-instagram"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</header>
+	
+	<div class="content" style="height: 85%; margin-top: 0px;">
+		<div class="wrapper" style="text-align: left; height: 85%;">
+			
+			<div class="plan-form">
+					<div class="small-headline text-b" style="display: flex; align-items: center;"><span style="width: 40px; height: 1px; background-color:#666; margin-right: 10px;"></span>READY TO MAKE YOUR IDEA WORK</div>	
+					<div style="font-size:52px;" class="bold">This is so exciting.</div>
+					<div class="separator-small"></div>
+					<div class="text">
+					We are ready to learn more about you and your needs<br>Let's build something great together! 
+					</div>
+				
+					<div class="plan-btn-cont">
+						<div class="btn"><a href="http://datababa.io/logo/index.html" target="_blank">Logo Design <span class="icon"><img src="images/arrow-icon.png"/></span></a></div>
+						<div class="btn"><a href="http://datababa.io/website/index.html" target="_blank">Website Design <span class="icon"><img src="images/arrow-icon.png"/></span></a></div>
+						<div class="btn"><a href="https://datababa.typeform.com/to/ZWfCxJ" target="_blank">Branding Design <span class="icon"><img src="images/arrow-icon.png"/></span></a></div>
+
+					</div>
+				
+					<!--<div class="form-handler">
+						<form method="post" id="plan-form">
+							
+							<div id="group-1">
+								<div class="fields"><input type="text" name="q1" placeholder="Your Name"/></div>
+								<div class="fields"><input type="text" name="q2" placeholder="Your Email Address"/></div>
+								<div class="separator-small"></div>
+								<div class="fields"><input type="text" name="q3" placeholder="Company/Organzation"/></div>
+								<div class="fields"><input type="text" name="q4" placeholder="Your Role/Title"/></div>
+								<div class="separator-small"></div>
+								<div class="fields"><input type="text" name="q5" placeholder="Website Address" class="large"/></div>
+								<div class="separator"></div>
+							</div>
+							
+							<div id="group-2" style="display: none;">
+								<div class="fields"><input type="text" name="q6" placeholder="Your Name"/></div>
+								<div class="fields"><input type="text" name="q7" placeholder="Your Email Address"/></div>
+								<div class="separator-small"></div>
+								<div class="fields"><input type="text" name="q8" placeholder="Company/Organzation"/></div>
+								<div class="fields"><input type="text" name="q9" placeholder="Your Role/Title"/></div>
+								<div class="separator"></div>
+							</div>
+							
+							<div class="btn-cont" data-step="1">
+								<input type="submit" name="submit" value=""/>
+								<img src="images/plan-next.png" class="next-btn"/>
+							</div>
+
+						</form>
+						
+					  <div class="results"></div>
+					</div>-->
+			</div>
+			
+		</div>
+		
+		<div class="plan-steps">
+			<div class="container">
+				<!--<div class="text-w">Questions 1 of 5</div>
+				<div class="progress-bar"><div class="active"></div></div>-->
+			</div>
+		</div>
+	</div>
+</div>	
+</body>
+</html>

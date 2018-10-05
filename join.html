@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DataBaba - Plan</title>
+<script src="includes/jquery-3.3.1.min.js"></script>
+<script src="includes/jquery-ui.min.js"></script>
+<script type="text/javascript" src="includes/main.js"></script>
+
+<link href="includes/style.css" rel="stylesheet" type="text/css">
+<link href="includes/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+</head>
+
+<body>
+<div class="site-wrapper">	
+	<header>
+		<div class="nav">
+			<div class="logo"><a href="index.html"><img src="images/baba-logo.png"/></a></div>
+			<div class="menu-btn">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+		</div>
+		
+		<div class="menu">
+			<!--<img src="images/animted-image-2.png" class="animated-image-header animated-image">-->
+			<svg id="organic-blob-2" class="animated-circle-2" width="450" height="450" xmlns="http://www.w3.org/2000/svg" filter="url(#goo2)">
+			  <defs>
+				<filter id="goo2">
+				  <!-- tympanus.net/codrops/creative-gooey-effects -->
+				  <fegaussianblur in="SourceGraphic" stdDeviation="10" result="blur" />
+				  <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo2" />
+				  <fecomposite in="SourceGraphic" in2="goo2" operator="atop"/>
+				</filter>
+			  </defs>
+			  <circle id="Circle5"></circle>
+			  <circle id="Circle6"></circle>
+			  <circle id="Circle7"></circle>
+			  <circle id="Circle8"></circle>
+			</svg>
+			<div class="wrapper">
+				<div class="menu-header">
+					<div class="logo"><a href="index.html"><img src="images/baba-logo.png"/></a></div>
+					<div class="close-btn"><span class="fa fa-close"></span></div>
+				</div>
+				
+				<div class="menu-items">
+					<a href="index.html">Home</a>
+					<a href="about.html">Agency</a>
+					<a href="services.html">Services</a>
+					<!--<a href="work.html">Work</a>-->
+					<a href="contact.html">Contact</a>
+				</div>
+				
+				<div class="data">
+				  	<div class="headline">We are all about partnership, not execution<br><span style="font-size: 16px; font-weight: normal;">Because DataBaba cares. Executors don't.</span></div>
+					<div class="meta-cont">
+						<div class="meta">
+							<div class="label">Email</div>
+							<div class="field">hello@datababa.com</div>
+						</div>
+						<div class="meta right">
+							<div class="label">Phone</div>
+							<div class="field">+92 342 2226659</div>
+						</div>
+						<div class="meta full">
+							<div class="label">Address</div>
+							<div class="field">3rd Floor, 59-C, Tauheed Commerical, <br>Phase 5, DHA, Karachi</div>
+						</div>
+						<div class="social-icons">
+							<a href="#"><span class="fa fa-facebook"></span></a>
+							<a href="#"><span class="fa fa-twitter"></span></a>
+							<a href="#"><span class="fa fa-instagram"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</header>
+	
+	<div class="content" style="height: 85%; margin-top: 0px;">
+		<div class="wrapper" style="text-align: left; height: 85%;">
+			
+			<div class="plan-form" style="padding-top: 2%;">
+					<div style="font-size:52px;" class="bold">Join our team.</div>
+					<div class="separator-small"></div>
+					<div class="text">
+					Are you bored of that everyday, monotonous routine and desperately need to let out your creativity to <br>create an impact? We get you, better than anyone else. We’ve been there, done that and it sucks.
+					</div>
+				
+					<div class="form-handler">
+						<form method="post" id="plan-form">
+							
+							<div id="group-1">
+								<div class="fields"><input type="text" name="q1" placeholder="Name"/></div>
+								<div class="fields"><input type="text" name="q2" placeholder="Email Address"/></div>
+								<div class="separator-small"></div>
+								<div class="fields"><input type="text" name="q3" placeholder="Phone"/></div>
+								<div class="fields"><input type="text" name="q4" placeholder="LinkedIn Profile"/></div>
+								<div class="separator-small"></div>
+								<div class="fields"><input type="text" name="q5" placeholder="Behance Profile (Optional)"/></div>
+								<div class="fields"><input type="text" name="q6" placeholder="Dribbble Profile (Optional)"/></div>
+								<div class="separator"></div>
+								<label>Upload your cv</label>
+								<div class="fields"><input type="file" name="q7"/></div>
+							</div>
+						
+							
+							<div class="plan-btn-cont btn-cont" data-step="1">
+								<input type="submit" name="submit" value=""/>
+								<div class="btn next-btn">Submit</div>
+							</div>
+
+						</form>
+						
+					  <div class="results"></div>
+					</div>
+			</div>
+			
+		</div>
+		
+	</div>
+</div>	
+</body>
+</html>

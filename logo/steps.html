@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+<link href="includes/style.css" rel="stylesheet" type="text/css">
+<link href="includes/rangeslider.css" rel="stylesheet" type="text/css">
+<link href="includes/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="includes/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="includes/jquery-ui.min.js"></script>
+<script type="text/javascript" src="includes/main.js"></script>
+<script type="text/javascript" src="includes/rangeslider.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<title>Logo Onboarding Process</title>
+</head>
+
+<body>
+		
+	<div class="container container-fullheight">
+		<div class="logo logo-steps"><a href="index.html"><img src="includes/baba-logo.png"/></a></div>
+		
+		<div class="headline headline-home headline-steps">Tell us a little<br>bit about your brand</div>
+		
+		<!--<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit seddo<br> eiusmod tempor incididunt ut labore et.</div>-->
+		
+		<form method="post" id="steps" class="steps">
+			
+			
+			<div class="groups" id="group-0">
+				<div class="small-title"></div>
+				<div class="title"></div>
+			</div>
+			
+			<div class="groups" id="group-1">
+				<div class="small-title">Business Enquiries</div>
+				<div class="title">Hi there, what’s your name?</div>
+				<input type="text" name="q1" placeholder="What's the name of your brand?" required/>
+				<input type="text" name="q2" placeholder="Link to your brand's website" class="no-space" required/>
+				<div style="clear: both;"></div>
+				<textarea name="q3" placeholder="Which brand inspire you the most?"></textarea>
+				<textarea name="q4" placeholder="What does your brand stands for?"></textarea>
+			</div>
+			
+			<div class="groups" id="group-2">
+				<div class="small-title">Business Enquiries</div>
+				<div class="title">Enter your business details</div>
+				<textarea name="q5" placeholder="Who are your direct and indirect competitors?"></textarea>
+				<textarea name="q6" placeholder="What's your business story?"></textarea>
+			</div>
+			
+						
+			<div class="groups" id="group-3">
+				<div class="small-title">Business Enquiries</div>
+				<div class="title">Other details</div>
+				<textarea name="q7" placeholder="What sets your brand apart from its competitors?"></textarea>
+				<textarea name="q8" placeholder="What's your brand's personality?"></textarea>
+			</div>
+			
+			<div class="groups" id="group-4">
+				<div class="range-cont"><input type="range" min="0" max="100" step="25" value="50" data-orientation="horizontal" id="type" name="q9"></div>
+				<div class="range-cont"><input type="range" min="0" max="100" step="25" value="50" data-orientation="horizontal" id="type-2" name="q10"></div>
+				<div class="range-cont"><input type="range" min="0" max="100" step="25" value="50" data-orientation="horizontal" id="type-3" name="q11"></div>
+				<div class="range-cont"><input type="range" min="0" max="100" step="25" value="50" data-orientation="horizontal" id="type-4" name="q12"></div>
+				<div class="range-cont"><input type="range" min="0" max="100" step="25" value="50" data-orientation="horizontal" id="type-5" name="q13"></div>
+				<div class="range-cont"><input type="range" min="0" max="100" step="25" value="50" data-orientation="horizontal" id="type-6" name="q14"></div>
+				<div class="range-cont"><input type="range" min="0" max="100" step="25" value="50" data-orientation="horizontal" id="type-7" name="q15"></div>
+
+			</div>
+			
+			<div class="groups" id="group-5">
+				
+				<div class="palette-cont">
+					<div class="palettes">
+						<img src="includes/blues.png"/>
+						<div class="title">Blues</div>
+					</div>
+
+					<div class="palettes">
+						<img src="includes/aquas.png"/>
+						<div class="title">Aquas</div>
+					</div>
+
+					<div class="palettes">
+						<img src="includes/greens.png"/>
+						<div class="title">Greens</div>
+					</div>
+
+					<div class="palettes">
+						<img src="includes/purples.png"/>
+						<div class="title">Purples</div>
+					</div>
+				</div>
+				
+				<div class="palette-cont">
+					<div class="palettes">
+						<img src="includes/pinks.png"/>
+						<div class="title">Pinks</div>
+					</div>
+
+					<div class="palettes">
+						<img src="includes/reds.png"/>
+						<div class="title">Reds</div>
+					</div>
+
+					<div class="palettes">
+						<img src="includes/oranges.png"/>
+						<div class="title">Oranges</div>
+					</div>
+
+					<div class="palettes">
+						<img src="includes/yellows.png"/>
+						<div class="title">Yellow</div>
+					</div>
+				</div>
+				
+				<div class="palette-cont">
+					<div class="palettes">
+						<img src="includes/light neutrals.png"/>
+						<div class="title">Light Neutrals</div>
+					</div>
+
+					<div class="palettes">
+						<img src="includes/dark neutrals.png"/>
+						<div class="title">Dark Neutrals</div>
+					</div>
+
+					<div class="palettes">
+						<img src="includes/designers.png"/>
+						<div class="title">Let designers pick the colors</div>
+					</div>	
+				</div>
+				
+				<input type="text" name="q16" id="color" style="display: none;">
+				
+			</div>
+			
+			<div class="groups" id="group-6" style="overflow: visible;">
+				<input type="text" name="fname" placeholder="First Name"/>
+				<input type="text" name="lname" placeholder="Last Name" class="no-space"/>
+				<div style="clear: both; margin-bottom: 25px;"></div>
+				<input type="email" name="email" placeholder="Email"/>
+				<input type="text" name="phone" placeholder="Phone" class="no-space"/>
+				<div style="clear: both;"></div>
+				
+				<div class="divider"></div>
+				
+				<div class="title small">Do you need more than a logo?</div>
+				
+				<div class="custom-checkbox">
+					<div class="icon-cont"><div class="icon active"></div></div>
+					<div class="title">Logo Design</div>
+					<div class="desc">No thanks. I’ll just start with the logo for now.</div>
+				</div>
+				
+				<div class="custom-checkbox">
+					<div class="icon-cont"><div class="icon"></div></div>
+					<div class="title">Logo &amp; brand identity</div>
+					<div class="desc">Get everything you need to kick off your brand.</div>
+				</div>
+				
+				<div class="custom-checkbox last">
+					<div class="icon-cont"><div class="icon"></div></div>
+					<div class="title">Logo &amp; website design</div>
+					<div class="desc">Get a logo and a website to go with it.</div>
+				</div>
+				
+				<input type="text" name="q17" class="select-input" style="display: none;"/>
+				
+				<div style="clear: both;"></div>
+				
+				<div class="divider"></div>
+				<div class="title small">Is there anything else you’d like to communicate?</div>
+				<textarea name="q18" placeholder="Which brand inspire you the most?"></textarea>
+			</div>
+			
+			<div class="groups" id="form-btns">
+				<div class="btn" id="btn-2" data-step="1">Back</div>
+				<div class="btn" id="btn-1" data-step="1">Next</div>
+			</div>
+			
+			<div class="groups" id="results-cont">
+				<div class="results"></div>
+			</div>			
+		</form>		
+	</div>
+	
+	
+	<div class="pagination">
+		<div class="handler">
+			
+			<div class="steps">Step 1 of 6</div>
+			<div class="bar">
+				<div class="active"></div>
+			</div>
+			
+			<div class="circle-icon"><span></span></div>
+			
+		</div>
+	</div>
+	
+</body>
+</html>

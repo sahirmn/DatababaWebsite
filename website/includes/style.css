@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+body{
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+}
+.logo {
+    width: 80px;
+    margin-top: 4%;
+}
+.logo-steps {
+    float: right;
+    margin-top: 3%;
+}
+.logo > a{
+	overflow: hidden;
+	display: block;
+}
+.logo > a > img {
+    width: 100%;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+.container-fullheight {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    padding: 0;
+}
+#home-bg {
+    background-image: url(home-bg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 40%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+	top: 0;
+}
+.headline {
+    color: #3f59a2;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: bold;
+    font-family: 'Source Serif Pro', serif;
+}
+.headline-home {
+    color: #3f59a2;
+    font-size: 60px;
+    margin: 2% 0;
+}
+.headline-steps {
+    line-height: 66px;
+    padding-top: 20px;
+}
+.text {
+    font-size: 20px;
+    color: #999;
+	line-height: 26px;
+}
+.small-text {
+    font-size: 16px;
+    color: #999;
+    line-height: 26px;
+}
+.small-text-footer{
+    bottom: 10%;
+    position: absolute;	
+}
+.icon-list {
+    margin-top: 2%;
+    line-height: 32px;
+    font-size: 20px;
+    color: #999;
+}
+.icon-list > .item > .fa{
+	margin-right: 5px;
+}
+.btn > a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 35px;
+}
+.btn {
+    background-color: #3e59a1;
+    color: #fff;
+    display: inline-block;
+    border-radius: 6px;
+    margin-top: 2%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(62,89,161,0.7);
+	-webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.btn:hover {
+    background-color: rgba(62,89,161,0.8);
+	box-shadow: 2px 2px 10px rgba(62,89,161,0.7);
+	-webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.btn > span.icon {
+    margin-left: 15px;
+    display: block;
+    margin-top: 1px;
+    float: right;
+    overflow: hidden;
+}
+form.steps {
+	/*overflow: hidden;*/
+	top: 5%;
+	position: relative;
+}
+form.steps > .groups {
+	display: none;
+	overflow: hidden;
+	max-width: 730px;
+	min-width: 600px;
+	width: 100%;
+	margin-top: -25px;
+}
+form.steps > #form-btns{
+	margin-top: 25px;
+}
+form.steps > .groups.visible{
+	overflow: visible;
+}
+form.steps > .groups > input[type="text"], form.steps > .groups > input[type="email"] {
+	background-color: #f6f6f6;
+	width: 49%;
+	padding: 17px 15px;
+	display: block;
+	float: left;
+	border-radius: 6px;
+	border: 0px;
+	font-size: 14px;
+	color: #999;
+	box-sizing: border-box;
+	margin-right: 2%;
+}
+form.steps > .groups > .no-space{
+	margin-right: 0px !important;
+}
+form.steps > .groups > input[type="text"]::placeholder{
+	color: #999;
+}
+form.steps > .groups > textarea {
+	background-color: #f6f6f6;
+	width: 100%;
+	padding: 20px 15px;
+	display: block;
+	border-radius: 6px;
+	border: 0px;
+	font-size: 14px;
+	color: #999;
+	margin-top: 25px;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+form.steps > .groups > .small-title {
+	margin-bottom: 5px;
+	letter-spacing: 1px;
+	font-size: 16px;
+	color: #999;
+}
+form.steps > .groups > .title {
+	font-size: 32px;
+	margin-bottom: 25px;
+	font-weight: 600;
+}
+form.steps > .groups > .title.small {
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: -10px;
+}
+.pagination {
+	background-color: #3f59a2;
+	color: #fff;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	padding: 40px 0px;
+}
+.pagination > .handler {
+	width: 80%;
+	margin: auto;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.pagination > .handler > .steps {
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	float: left;
+}
+.pagination > .handler > .bar {
+	float: left;
+	background-color: rgba(255,255,255,0.4);
+	width: 300px;
+	height: 8px;
+	border-radius: 15px;
+	margin-left: 35px;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.pagination > .handler > .bar > .active {
+	background-color: #fff;
+	width: 64px;
+	position: relative;
+	top: 0;
+	z-index: 1;
+	height: 8px;
+	border-radius: 20px;
+	margin-right: -5px;
+	float: left;
+}
+.circle-icon {
+	background-color: #fff;
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	position: absolute;
+	right: 0;
+	display: none;
+	align-items: center;
+}
+.circle-icon > span {
+	background-color: #3f59a2;
+	width: 25px;
+	height: 25px;
+	position: relative;
+	display: block;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+form.steps > .groups > .btn {
+	padding: 10px 20px;
+	font-size: 14px;
+	margin-right: 5px;
+	box-shadow: 1px 1px 3px rgba(62,89,161,0.7);
+	border-radius: 4px;
+}
+.range-cont{
+	/* overflow: hidden; */
+	margin-bottom: 30px;
+}
+.rangeslider--horizontal {
+	height: 10px !important;
+	clear: both;
+}
+.rangeslider__fill {
+	background-color: #3f59a2 !important;
+}
+.rangeslider--horizontal .rangeslider__handle {
+	top: -12px !important;
+}
+.rangeslider__handle {
+	background: #3f59a2 !important;
+	border: none !important;
+	width: 30px !important;
+	height: 30px !important;
+}
+.rangeslider__handle::after {
+	width: 16px !important;
+	height: 16px !important;
+	background: #fff !important;
+}
+.range-title-left {
+	float: left;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+.range-title-right {
+	float: right;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+#group-4, #group-5, #group-6{
+	margin-top:-25px;
+}
+.palette-cont {
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+.palettes {
+	width: 100px;
+	overflow: hidden;
+	display: block;
+	cursor: pointer;
+	margin-right: 25px;
+	float: left;
+}
+.palettes > img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+.palettes > .title {
+	font-size: 13px;
+}
+.palettes.active {
+	font-weight: bold;
+}
+.custom-checkbox {
+	overflow: hidden;
+	width: 226px;
+	font-size: 14px;
+	margin-top: 30px;
+	box-sizing: border-box;
+	padding: 15px 13px;
+	border-radius: 4px;
+	background-color: #fff;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+	float: left;
+	margin-right: 25px;
+	cursor: pointer;
+}
+.custom-checkbox.last{
+	margin-right: 0px;
+}
+.custom-checkbox > .title {
+	font-weight: bold;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+.custom-checkbox > .desc {
+	color: #999;
+	font-size: 12px;
+	line-height: 20px;
+}
+.custom-checkbox > .icon-cont {
+	overflow: hidden;
+	float: left;
+	height: 65px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.custom-checkbox > .icon-cont > .icon {
+	width: 20px;
+	height: 20px;
+	background-color: #3f59a2;
+	border-radius: 100%;
+	box-sizing: border-box;
+}
+.custom-checkbox > .icon-cont > .icon.active {
+	border: 4px solid #3f59a2;
+	background-color: #fff;
+}
+.divider {
+	height: 1px;
+	background-color: #eee;
+	width: 100%;
+	margin-top: 30px;
+}
+.custom-checkbox.second {
+	width: 100px;
+	height: auto;
+	padding: 0;
+	box-shadow: inherit;
+}
+.custom-checkbox.second > .icon-cont {
+	height: auto;
+}
+@media(max-height:880px){
+	.small-text-footer{
+		bottom: 5%;
+		position: absolute;	
+	}
+	.headline-steps {
+		margin: 1% auto !important;
+		font-size: 44px;
+		line-height: 44px;
+	}
+	.divider {
+		margin-top: 15px !important;
+	}
+	form.steps > .groups > input[type="text"], form.steps > .groups > input[type="email"] {
+		padding: 15px;
+	}
+	.m-divider {
+		margin-bottom: -10px !important;
+	}
+}
+@media(max-width:767px){
+	 .small-text-footer {
+		position: relative;
+		bottom: auto;
+		margin-top: 35px;
+		margin-bottom: 25px;
+	}
+	.container-fullheight {
+		position: relative;
+	}
+	.container {
+		width: 90%;
+	}
+	.headline-steps {
+	margin: 25px auto !important;
+		font-size: 26px;
+		line-height: 26px;
+	}
+	form.steps {
+		position: relative;
+		clear: both;
+	}
+	form.steps > .groups {
+		max-width: 100%;
+		min-width: 100%;
+	}
+	form.steps > .groups > input[type="text"], form.steps > .groups > input[type="email"] {
+		padding: 15px;
+		float: none;
+		width: 100%;
+		margin-top: 25px;
+	}
+	.pagination {
+		margin-top: 25px;
+		position: relative;
+	}
+	.pagination > .handler {
+		width: 90%;
+		display: block;
+		align-items: inherit;
+		overflow: hidden;
+	}
+	.pagination > .handler > .steps {
+		float: none;
+	}
+	.pagination > .handler > .bar {
+		float: none;
+		margin-left: 0;
+		margin-top: 25px;
+	}
+}

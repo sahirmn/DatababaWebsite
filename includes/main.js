@@ -151,10 +151,12 @@ $(document).ready(function(){
 	
 	$(".menu-btn").click(function(){
 		$(".menu").fadeIn(1000);
+		$("html").addClass("disableScroll");
 	});
 	
 	$(".close-btn").click(function(){
 		$(".menu").fadeOut(1000);
+		$("html").removeClass("disableScroll");
 	});
 	
 	$(".top-section").height($(window).height());

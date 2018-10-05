@@ -6,6 +6,9 @@ body{
 	margin: 0px;
 	font-family: 'Source Serif Pro', serif;
 }
+.disableScroll {
+	overflow: hidden;
+}
 .animated{
 	visibility: hidden;
 }
@@ -322,6 +325,7 @@ header > .nav > .menu-btn:hover > .item:last-child {
 	background-repeat: no-repeat;
 	background-position: right bottom;*/
 	display: none;
+	overflow: auto;
 }
 .menu > .wrapper {
 	width: 80%;
@@ -437,7 +441,7 @@ header > .nav > .menu-btn:hover > .item:last-child {
     position: absolute;
     width: 100%;
     /* bottom: 0%; */
-    margin-top: 60px;
+    margin-top: 30px;
 }
 .menu > .wrapper > .data > .meta-cont > .meta {
 	float: left;
@@ -450,6 +454,19 @@ header > .nav > .menu-btn:hover > .item:last-child {
 }
 .menu > .wrapper > .data > .meta-cont > .meta.full {
 	margin-top: 20%;
+	width: 70%;
+	float: none;
+	margin-bottom: 10%;
+	line-height: 22px;
+}
+#PKAddress {
+	margin-top: 0px;
+	width: 70%;
+	float: none;
+	margin-bottom: 10%;
+	line-height: 22px;
+}
+#USAddress {
 	width: 70%;
 	float: none;
 	margin-bottom: 10%;
@@ -1748,6 +1765,7 @@ img.scissor {
 	min-height: 630px;
 	height: 100vh;
 	z-index: 9999;
+	overflow: auto;
 }
 	.menu > .wrapper > .data > .meta-cont > .meta.right {
 		float: none;
